@@ -1,0 +1,95 @@
+extends layout.pug
+
+block menu
+        li.nav-item
+          a.nav-link(href='/') Home
+        li.nav-item
+          a.nav-link(href='/order') Menu
+        if user
+          li.nav-item
+            a.nav-link(href='/contact') Contact
+        li.nav-item.cart
+          a.nav-link(href='/cart')
+            span.icon.icon-shopping_cart
+
+block content
+  section.home-slider.owl-carousel
+    .slider-item(style='background-image: url(images/bg_3.jpg);' data-stellar-background-ratio='0.5')
+      .overlay
+      .container
+        .row.slider-text.justify-content-center.align-items-center
+          .col-md-7.col-sm-12.text-center.ftco-animate
+            h1.mb-3.mt-5.bread Cart
+  section.ftco-section.ftco-cart
+    .container
+      - var sum = 0
+      .row
+        .col-md-12.ftco-animate
+          .cart-list
+            table.table
+              thead.thead-primary
+                tr.text-center
+                  th &nbsp;
+                  th &nbsp;
+                  th Product
+                  th Price
+                  th Quantity
+                  th Total
+              tbody
+                each food in foods
+                  - sum += food.price * food.count
+                  tr.text-center
+                    td.product-remove
+                      a(style="cursor: pointer" data-id=food.id).delete-food
+                        span.icon-close
+                    td.image-prod
+                      .img(style='background-image:url('+food.image+');')
+                    td.product-name
+                      h3(style="color:#000")=food.name
+                      p=food.description
+                    td.price=food.price.toString() + ',000'
+                    td.quantity
+                      .input-group.mb-3
+                        input.quantity.form-control.input-number(type='number' name='quantity' value=food.count min='1' max='100')
+                    td.total=(food.price * food.count).toString() + ',000'
+      .row
+        .col-md-6.mt-5.cart-wrap.ftco-animate
+          .cart-total.mb-3
+            h3(style="color:#000") Cart Totals
+            p.d-flex
+              span Subtotal
+              span.sub-total=sum.toString() + ',000'
+            p.d-flex
+              span Discount
+              span 0
+            hr
+            p.d-flex
+              span Total
+              span.total-price=sum.toString() + ',000'
+        .col-md-6
+          .cart-detail.ftco-bg-dark.p-3.p-md-4.mt-4
+            h3.billing-heading.mb-4 Payment Method
+            .form-group
+              .col-md-12
+                .radio
+                  label
+                    input.mr-2(type='radio' name='optradio' disabled='disabled')
+                    |  Direct Bank Tranfer
+            .form-group
+              .col-md-12
+                .radio
+                  label
+                    input.mr-2(type='radio' name='optradio' disabled='disabled')
+                    |  Zalopay
+            .form-group
+              .col-md-12
+                .radio
+                  label
+                    input.mr-2(type='radio' name='optradio' checked='checked')
+                    |  Momo
+            p
+              a.btn.btn-primary.py-3.px-4#btn-pay Pay the order
+
+block script
+  script(src='js/cart.js')
+

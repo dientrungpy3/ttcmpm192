@@ -1,0 +1,21 @@
+link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet')
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+link(rel='stylesheet' href='css/login.css')
+
+.wrapper.fadeInDown
+  #formContent
+    .fadeIn.first
+      a(href='/')
+        img#icon(src='images/logo.png' alt='User Icon')
+    if wrong
+      .alert.alert-danger(onclick="this.style.display='none'" style="cursor: pointer") Wrong Phone number or Password
+    form(action ="/login" method="POST")
+      input#login.fadeIn.second(type='text' name='phone' placeholder='Phone number' value = value.phone required)
+      input#password.fadeIn.third(type='password' name='password' placeholder='Password' value = value.password required)
+      input.fadeIn.fourth(type='submit' value='Log In')
+    #formFooter
+      p
+        a.underlineHover(href='/forgot-password') Forgot Password?
+      p
+        a.underlineHover(href='/register') Don't have account?

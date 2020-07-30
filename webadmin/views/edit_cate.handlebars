@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SFCS Management</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+</head>
+<body>
+<div class="container-fluid" style="height: 100%">
+
+
+    <div class="row">
+        <div class="col-lg-3 h-100 " style="background: #FF8C00; height: 500px; width: 300px; position: fixed; top: 0px;
+    left: 0px;
+    z-index: 100;">
+            {{!-- <image src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.15752-9/115970535_318944035909560_1507067865507279453_n.png?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=LIlWZwySpFQAX9XYoem&_nc_ht=scontent.fsgn4-1.fna&oh=b5536458504ca0928969ee339bb606db&oe=5F442736" 
+            style="width: 50px; height: 50px"></image> --}}
+            <h3 class="text-lg-center mt-2" style="color: white;">Quản lý </h3>
+            
+            <div class="dropdown dropdown dropright">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="color: black;">
+                    <i class="fas fa-bars"></i>
+                    Thực đơn
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/index">Danh sách món ăn</a>
+                    <a class="dropdown-item" href="/add_product">Thêm món ăn</a>
+                    <a class="dropdown-item" href="/list_cate">Danh sách loại thực phẩm</a>
+                    <a class="dropdown-item" href="/add_cate">Thêm loại thực phẩm</a>
+
+                </div> 
+
+            </div>
+            </br>
+            <div class="dropdown dropdown dropright">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                    <i class="fas fa-bars"></i>
+                   Người dùng
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/list_user">Danh sách người dùng</a>
+                </div>
+            </div>
+            <br>
+            <div class="dropdown dropdown dropright">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                    <i class="fas fa-bars"></i>
+                    Khuyến mãi
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/list_gift">Danh sách khuyến mãi</a>
+                    <a class="dropdown-item" href="/add_gift">Thêm khuyến mãi</a>
+                </div>
+            </div>
+            </br>
+
+            <div class="dropdown dropdown dropright mt-10">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                    <i class="fas fa-bars"></i>
+               Đơn hàng 
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/list_order">Danh sách đơn hàng</a>
+                </div>
+            </div>
+            </br>
+        </div>
+        <div class="col-lg-9" style="position: absolute;
+    right: 0; left: 320px;">
+
+            <div class="row m-2 border border-primary">
+                <div class="col-lg-8">
+                    <form method="post" class="was-validated m-2" action="/update_cate"  enctype="multipart/form-data"
+                    >
+                        <h4>Cập nhật loại</h4>
+                        <div class="form-group">
+                            <input type="hidden" name="id" class="form-control" placeholder="Nhập Mã sản phẩm"  value="{{cate._id}}" required="">
+
+                        </div>
+                        <div class="form-group">
+                            <label>Tên sản phẩm:</label>
+                            <input type="phone" class="form-control" name="name" placeholder="Nhập Tên sản phẩm" value="{{cate.name}}"  required>
+                            <div class="valid-feedback">Ok.</div>
+                            <div class="invalid-feedback">Nhập lại</div>
+                        </div>
+
+
+                        <input type="hidden" name="image" class="form-control" placeholder="Nhập Mã sản phẩm"  value="{{cate.images}}" required="">
+
+                        <div class="rounded-  border border-primary m-2" style="height:100px">
+                            <image src="http://localhost:4000/public/photo/{{cate.images}}"  style="width: 50px; height: 50px"> </image>
+
+                            <div class="form-group">
+                                <input
+                                        multiple
+                                        type="file"
+                                        class="form-control-file"
+                                        name="file"
+                                        value="{{cate.images}}"
+                                        id="file"
+                                        placeholder="File"
+                                />
+                            </div>
+                        </div>
+
+                        <button  type="submit" class="btn btn-primary">Cập nhật</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>

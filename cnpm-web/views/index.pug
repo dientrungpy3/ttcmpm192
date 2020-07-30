@@ -1,0 +1,174 @@
+extends layout.pug
+
+block menu
+        li.nav-item.active
+          a.nav-link(href='/') Home
+        li.nav-item
+          a.nav-link(href='/order') Menu
+        if user
+          li.nav-item
+            a.nav-link(href='/contact') Contact
+        li.nav-item.cart
+          a.nav-link(href='/cart')
+            span.icon.icon-shopping_cart
+            if newOrder
+              span.bag.d-flex.justify-content-center.align-items-center
+                small=newOrder
+
+block content
+    section.home-slider.owl-carousel
+      .slider-item(style='background-image: url(images/bg_1.jpg);')
+        .overlay
+        .container
+          .row.slider-text.justify-content-center.align-items-center(data-scrollax-parent='true')
+            .col-md-8.col-sm-12.text-center.ftco-animate
+              span.subheading Welcome
+              h2.mb-4 Đồ ăn ngon - sạch - dinh dưỡng
+              p.mb-4.mb-md-5
+                | Sức khỏe và cảm nhận của khách hàng là tiêu chí hàng đầu của chúng tôi
+              p
+                a.btn.btn-primary.p-3.px-xl-4.py-xl-3(href='/order') Đặt món
+      .slider-item(style='background-image: url(images/bg_2.jpg);')
+        .overlay
+        .container
+          .row.slider-text.justify-content-center.align-items-center(data-scrollax-parent='true')
+            .col-md-8.col-sm-12.text-center.ftco-animate
+              span.subheading Welcome
+              h2.mb-4 Thức uống đa dạng
+              p.mb-4.mb-md-5
+                | Chúng tôi đem đến cho khách hàng sự giải khát và thưởng thức tuyệt hảo
+              p
+                a.btn.btn-primary.p-3.px-xl-4.py-xl-3(href='/order') Đặt món
+      .slider-item(style='background-image: url(images/bg_3.jpg);')
+        .overlay
+        .container
+          .row.slider-text.justify-content-center.align-items-center(data-scrollax-parent='true')
+            .col-md-8.col-sm-12.text-center.ftco-animate
+              span.subheading Welcome
+              h2.mb-4 Giá cả hợp lý
+              p.mb-4.mb-md-5
+                | Chính sách tiết kiệm của khách hàng cũng là chính sách của chúng tôi
+              p
+                a.btn.btn-primary.p-3.px-xl-4.py-xl-3(href='/order') Đặt món
+    section.ftco-intro
+      .container-wrap
+        .wrap.d-md-flex.align-items-xl-end
+          .info
+            .row.no-gutters
+              .col-md-4.d-flex.ftco-animate
+                .icon
+                  span.icon-phone
+                .text
+                  h3 012 345 678 9
+                  p Hãy gọi cho chúng tôi vào giờ hành chính
+              .col-md-4.d-flex.ftco-animate
+                .icon
+                  span.icon-my_location
+                .text
+                  h3 Số 1 đường A, phường B
+                  p Dĩ An, Bình Dương
+              .col-md-4.d-flex.ftco-animate
+                .icon
+                  span.icon-clock-o
+                .text
+                  h3 Phục vụ thứ 2 - thứ 6
+                  p 8:00am - 9:00pm
+          .book.p-4#contact-form
+            h3 Contact
+            form.appointment-form(action='/anonymous',method='post')
+              .d-md-flex
+                .form-group
+                  input.form-control(type='text' placeholder='Name' name ='name' required)
+                .form-group.ml-md-4
+                  input.form-control(type='email' placeholder='Mail' name ='mail' required)
+              .d-md-flex
+                .form-group
+                  input.form-control(type='text' placeholder='Subject' name ='subject' required)
+              .d-md-flex
+                .form-group
+                  textarea.form-control(id='' cols='30' rows='2' placeholder='Message' name ='message' required)
+                .form-group.ml-md-4
+                  input.btn.btn-white.py-3.px-4(type='submit' value='Send')
+    section.ftco-menu
+      .container
+        .row
+          .col-md-2
+            h1.border-bottom-1(style="color:#000") Menu
+          .col-md-4
+          .col-md-4
+          .col-md-2
+            a.btn.btn-outline-dark.btn-lg(href="/order" style="font-size:18px") View all menu
+        .row
+          .col-md-3.block
+            .menu-entry
+              .img(style='background-image: url(images/com-bo-xao.jpg);')
+              .text.text-center.pt-4
+                h3.name-food Cơm bò xào
+                p Description
+                p.price
+                  span 25,000
+                p
+                  .btn.btn-primary.btn-outline-primary.add-to-card(data-id='4') Add to Cart
+          .col-md-3.block
+            .menu-entry
+              .img(style='background-image: url(images/canh-chua.jpg);')
+              .text.text-center.pt-4
+                h3.name-food Canh chua
+                p Description
+                p.price
+                  span 5,000
+                p
+                  .btn.btn-primary.btn-outline-primary.add-to-card(data-id='5') Add to Cart
+          .col-md-3.block
+            .menu-entry
+              .img(style='background-image: url(images/pho-bo.jpg);')
+              .text.text-center.pt-4
+                h3.name-food Phở bò
+                p Description
+                p.price
+                  span 5,000
+                p
+                  .btn.btn-primary.btn-outline-primary.add-to-card(data-id='11') Add to Cart
+          .col-md-3.block
+            .menu-entry
+              .img(style='background-image: url(images/banh-mi.jpg);')
+              .text.text-center.pt-4
+                h3.name-food Bánh mì
+                p Description
+                p.price
+                  span 15,000
+                p
+                  .btn.btn-primary.btn-outline-primary.add-to-card(data-id='17') Add to Cart
+    section#section-counter.ftco-counter.ftco-bg-dark.img(style='background: #f5f5f5' data-stellar-background-ratio='0.5')
+      .container
+        .row.justify-content-center
+          .col-md-10
+            .row
+              .col-md-6.col-lg-4.d-flex.justify-content-center.counter-wrap.ftco-animate
+                .block-18.text-center
+                  .text
+                    .icon
+                      i
+                        .fas.fa-user.fa-4x.mt-2
+                    strong.number(data-number=userCount) 0
+                    span.text-dark Happy customer
+              .col-md-6.col-lg-4.d-flex.justify-content-center.counter-wrap.ftco-animate
+                .block-18.text-center
+                  .text
+                    .icon
+                      i
+                        .fas.fa-utensils.fa-4x.mt-2
+                    strong.number(data-number='0') 0
+                    span.text-dark Happy meal
+              .col-md-6.col-lg-4.d-flex.justify-content-center.counter-wrap.ftco-animate
+                .block-18.text-center
+                  .text
+                    .icon
+                      i
+                        .fas.fa-cookie.fa-4x.mt-2
+                    strong.number(data-number=foodCount) 0
+                    span.text-dark Dishes
+
+
+block script
+  script(src='js/order.js')

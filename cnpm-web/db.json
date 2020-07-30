@@ -1,0 +1,259 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Nguyễn Hồng Nhân",
+      "yearBirth": "2000",
+      "phone": "0123456789",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Văn A",
+      "yearBirth": "1977",
+      "phone": "0369874521",
+      "password": "cdd082323fcf159d7bfd49bae4ddd789",
+      "contact": []
+    },
+    {
+      "id": 3,
+      "name": "Nhân",
+      "yearBirth": "2000",
+      "phone": "0123456788",
+      "password": "cdd082323fcf159d7bfd49bae4ddd789",
+      "contact": []
+    },
+    {
+      "id": 4,
+      "name": "Nhân",
+      "yearBirth": "2000",
+      "phone": "0123456787",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 5,
+      "name": "Nhân",
+      "yearBirth": "2000",
+      "phone": "0911111112",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 6,
+      "name": "Nhân",
+      "yearBirth": "1999",
+      "phone": "0147852369",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 7,
+      "name": "nhân",
+      "yearBirth": "1000",
+      "phone": "0789456123",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 8,
+      "name": "Nhân",
+      "yearBirth": "2000",
+      "phone": "0124456789",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 9,
+      "name": "Nhân",
+      "yearBirth": "2000",
+      "phone": "0145236987",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 10,
+      "name": "Nhân",
+      "yearBirth": "2000",
+      "phone": "0123654789",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    },
+    {
+      "id": 11,
+      "name": "Nhân",
+      "yearBirth": "2000",
+      "phone": "0123654123",
+      "password": "bb84e55044dbe961242dd9e8152f7932",
+      "contact": []
+    }
+  ],
+  "foods": {
+    "com": [
+      {
+        "id": 1,
+        "name": "Cơm gà",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/com-ga.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Cơm tấm sườn bì chả",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/com-tam.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Cơm thịt kho",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/com-thit-kho.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Cơm bò xào",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/com-bo-xao.jpg"
+      }
+    ],
+    "canh": [
+      {
+        "id": 5,
+        "name": "Canh chua",
+        "description": "Description",
+        "price": "5,000",
+        "image": "images/canh-chua.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Canh khổ qua",
+        "description": "Description",
+        "price": "5,000",
+        "image": "images/canh-kho-qua.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Canh khoai",
+        "description": "Description",
+        "price": "5,000",
+        "image": "images/canh-khoai.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Canh rau",
+        "description": "Description",
+        "price": "5,000",
+        "image": "images/canh-rau.jpg"
+      }
+    ],
+    "bunPho": [
+      {
+        "id": 9,
+        "name": "Bún bò",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/bun-bo.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Bún thịt nướng",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/bun-thit-nuong.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Phở bò",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/pho-bo.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Phở giò",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/pho-gio.jpg"
+      }
+    ],
+    "nuocUong": [
+      {
+        "id": 13,
+        "name": "Nước cam vắt",
+        "description": "Description",
+        "price": "15,000",
+        "image": "images/nuoc-cam-vat.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Sinh tố bơ",
+        "description": "Description",
+        "price": "15,000",
+        "image": "images/sinh-to-bo.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Sinh tố cà rốt",
+        "description": "Description",
+        "price": "15,000",
+        "image": "images/sinh-to-ca-rot.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Sinh tố cà chua",
+        "description": "Description",
+        "price": "15,000",
+        "image": "images/sinh-to-ca-chua.jpg"
+      }
+    ],
+    "thucAnNhanh": [
+      {
+        "id": 17,
+        "name": "Bánh mì",
+        "description": "Description",
+        "price": "15,000",
+        "image": "images/banh-mi.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Hotdog",
+        "description": "Description",
+        "price": "20,000",
+        "image": "images/hotdog.jpg"
+      },
+      {
+        "id": 19,
+        "name": "Hamburger",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/hamburger.jpg"
+      },
+      {
+        "id": 20,
+        "name": "Sandwich",
+        "description": "Description",
+        "price": "15,000",
+        "image": "images/sandwich.jpg"
+      },
+      {
+        "id": 21,
+        "name": "Gà rán",
+        "description": "Description",
+        "price": "25,000",
+        "image": "images/ga-ran.jpg"
+      },
+      {
+        "id": 22,
+        "name": "Khoai tây chiên",
+        "description": "Description",
+        "price": "10,000",
+        "image": "images/khoai-tay-chien.jpg"
+      }
+    ]
+  },
+  "anonymous": []
+}

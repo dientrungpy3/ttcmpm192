@@ -1,0 +1,142 @@
+doctype html
+head
+  title Demo Food Court
+  link(rel="icon" type="image/png" href="images/logo.png")
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet')
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+  link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css")
+  link(rel='stylesheet' href='css/open-iconic-bootstrap.min.css')
+  link(rel='stylesheet' href='css/animate.css')
+  link(rel='stylesheet' href='css/owl.carousel.min.css')
+  link(rel='stylesheet' href='css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='css/magnific-popup.css')
+  link(rel='stylesheet' href='css/aos.css')
+  link(rel='stylesheet' href='css/ionicons.min.css')
+  link(rel='stylesheet' href='css/bootstrap-datepicker.css')
+  link(rel='stylesheet' href='css/jquery.timepicker.css')
+  link(rel='stylesheet' href='css/flaticon.css')
+  link(rel='stylesheet' href='css/icomoon.css')
+  link(rel='stylesheet' href='css/style.css')
+
+nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light(style='background-color:#000 !important')
+  .container
+    a.navbar-brand(href='/')
+      img(src='images/logo.png' style='height: 50px')
+      small Food Court
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#ftco-nav' aria-controls='ftco-nav' aria-expanded='false' aria-label='Toggle navigation')
+      span.oi.oi-menu
+      |  Menu
+    #ftco-nav.navbar-collapse.collapse.show
+      ul.navbar-nav.mx-auto
+        block menu
+  if !user
+    .float-right
+      .nav-item.pt-2.mr-3.ml-5
+        a.btn.btn-outline-success(href='/register') Đăng ký
+    .float-right
+      .nav-item.pt-2
+        a.btn.btn-outline-success(href='/login') Đăng nhập
+  else
+    .float-right.mr-3.ml-5
+      h6 Xin chào
+      h5=user.name
+    .float-right
+      .nav-item.pt-2
+        a.btn.btn-outline-success(href='/login') Đăng xuất
+
+if !user
+  i#icon-contact.p-4(style='color: orange')
+    a(href='/#contact-form')
+      .fas.fa-envelope.fa-4x
+      p Contact
+
+block content
+
+footer.ftco-footer.ftco-section.img
+  .overlay
+  .container
+    .row
+      .col-lg-4.col-md-6
+        .ftco-footer-widget.mb-4
+          h2.ftco-heading-2 About Us
+          p
+            | Chúng tôi luôn cung cấp cho khách hàng những món ăn chất lượng, ngon miệng và vừa túi tiền.
+          ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-5
+            li.ftco-animate
+              a(href='#')
+                span.icon-twitter
+            li.ftco-animate
+              a(href='#')
+                span.icon-facebook
+            li.ftco-animate
+              a(href='#')
+                span.icon-instagram
+      .col-lg-4.col-md-6
+        .ftco-footer-widget.mb-4
+          h2.ftco-heading-2 The criteria
+          .block-23.mb-3
+            ul
+              li
+                span.icon.icon-check
+                span.text Đồ ăn chất lượng
+              li
+                span.icon.icon-check
+                span.text Đặt món dễ dàng
+              li
+                span.icon.icon-check
+                span.text Thưởng thức nhanh chóng
+              li
+                span.icon.icon-check
+                span.text Phục vụ tận tình
+      .col-lg-4.col-md-6
+        .ftco-footer-widget.mb-4
+          h2.ftco-heading-2 Have a Questions?
+          .block-23.mb-3
+            ul
+              li
+                span.icon.icon-map-marker
+                span.text Số 1 đường A, phường B, Dĩ An, Bình Dương
+              li
+                span.icon.icon-phone
+                span.text 012 345 678 9
+              li
+                span.icon.icon-envelope
+                span.text canteen@gmail.com
+    .row
+      .col-md-12.text-center
+        p
+          // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+          | Copyright &copy;
+          script.
+            document.write(new Date().getFullYear());
+          |  All rights reserved | Đại học Bách Khoa Tp.HCM 
+          i.icon-heart(aria-hidden='true')
+          |  by 
+          a(href='https://www.facebook.com/nhn.513103' target='_blank') Team #
+          // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+// loader
+#ftco-loader.show.fullscreen
+  svg.circular(width='48px' height='48px')
+    circle.path-bg(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke='#eeeeee')
+    circle.path(cx='24' cy='24' r='22' fill='none' stroke-width='4' stroke-miterlimit='10' stroke='#F96D00')
+
+block script
+script(src='js/jquery.min.js')
+script(src='js/jquery-migrate-3.0.1.min.js')
+script(src='js/popper.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.easing.1.3.js')
+script(src='js/jquery.waypoints.min.js')
+script(src='js/jquery.stellar.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/jquery.magnific-popup.min.js')
+script(src='js/aos.js')
+script(src='js/jquery.animateNumber.min.js')
+script(src='js/bootstrap-datepicker.js')
+script(src='js/jquery.timepicker.min.js')
+script(src='js/scrollax.min.js')
+script(src='js/main.js')
