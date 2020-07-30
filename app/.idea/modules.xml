@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BKFoodCourt.iml" filepath="$PROJECT_DIR$/.idea/modules/BKFoodCourt.iml" group="BKFoodCourt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BKFoodCourt-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BKFoodCourt-app.iml" group="BKFoodCourt/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slidingdotsplash/slidingdotsplash.iml" filepath="$PROJECT_DIR$/.idea/modules/slidingdotsplash/slidingdotsplash.iml" group="BKFoodCourt/slidingdotsplash" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_item_new_food"
+    app:cardCornerRadius="@dimen/margin10"
+    android:background="@color/colorWhite"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgFoodNew"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/background"
+                app:riv_corner_radius="15dip" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_promo"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/txtTitleMar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/text_size_15"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp">
+
+                </TextView>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/txtNameFoodNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:textSize="@dimen/text_size_20" />
+
+        <LinearLayout
+            android:padding="@dimen/margin10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/txtRateFoodNew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/txtCommentFoodNew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

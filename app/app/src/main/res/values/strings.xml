@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">BK Food Court</string>
+    <string name="title_splash" translatable="false">WELCOME\n TO BK\n FOOD\n COURT</string>
+    <string name="welcome_back" translatable="false">BK Food Court</string>
+    <string name="title_login">Login to your account</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="didn_t_have_an_account">Didn\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="explore">Explore</string>
+    <string name="my_order">My order</string>
+    <string name="favourite">Favourite</string>
+    <string name="profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="new_food" translatable="false">New Food</string>
+    <string name="hot_food" translatable="false">Hot Food</string>
+    <string name="vn_food" translatable="false">BK Food Court</string>
+    <string name="list_menu" translatable="false">List Menu</string>
+    <string name="order">Order</string>
+    <string name="new_try_pickup">New!Try Pickup</string>
+    <string name="description_order_food">Pickup on your time. Your order is ready when you are.</string>
+    <string name="order_now">Order Now</string>
+    <string name="write_comment">Write comment</string>
+    <string name="submit">Submit</string>
+    <string name="review">Review</string>
+    <string name="verify">Verify</string>
+    <string name="places">Places</string>
+    <string name="setting">Setting</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="your_order_is_successfully">Your order is successfully.</string>
+    <string name="cart_empty">Cart Empty</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_out">Check out</string>
+    <string name="news">News</string>
+    <string name="cate">Cate</string>
+    <string name="gift_code" translatable="false">Gift Code</string>
+    <string name="apply">Apply</string>
+    <string name="favourite_empty">Favourite Empty</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="all_food" translatable="false">All Food</string>
+    <string name="view_all">View All</string>
+    <string name="login">Login</string>
+    <string name="new_password">New Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="darkmode">DarkMode</string>
+    <string name="no_comment">No Comment</string>
+    <string name="search">Search</string>
+</resources>
